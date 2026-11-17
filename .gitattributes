@@ -1,0 +1,3 @@
+# Windows で clone しても，シェルスクリプトの改行コードを LF のままにする設定です．
+# （改行コードが CRLF になると，bash scripts/check.sh がエラーになるため）
+*.sh text eol=lf

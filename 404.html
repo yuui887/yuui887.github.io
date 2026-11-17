@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  存在しないページ（例：https://ユーザー名.github.io/abc）を開いたときに表示されるページです．
+  GitHub Pages は，いちばん上のフォルダに 404.html があると，自動でこのページを使います．
+  自分のサイトのデザインに合わせて，書きかえてもかまいません．
+-->
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ページが見つかりません</title>
+  <style>
+    /* ===== 色の設定 ===== */
+    :root {
+      --main-color: #2e7d32;  /* メインの色 */
+      --bg-color: #f5f8f5;    /* ページの背景の色 */
+      --text-color: #222222;  /* 文字の色 */
+      --sub-color: #666666;   /* 補足の文字の色 */
+    }
+
+    /* パソコンやスマートフォンがダークモードのときの色 */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-color: #81c784;
+        --bg-color: #121512;
+        --text-color: #e8ece8;
+        --sub-color: #a0a8a0;
+      }
+    }
+
+    /* ページ全体：文字を画面のまんなかに置く */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      box-sizing: border-box;
+      text-align: center;
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.8;
+      color: var(--text-color);
+      background: var(--bg-color);
+    }
+
+    /* 大きな「404」 */
+    .code {
+      margin: 0;
+      font-size: 5rem;
+      font-weight: bold;
+      line-height: 1;
+      color: var(--main-color);
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: var(--sub-color);
+    }
+
+    /* トップページへ戻るボタン */
+    a {
+      display: inline-block;
+      padding: 8px 24px;
+      color: #ffffff;
+      text-decoration: none;
+      background: var(--main-color);
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body>
+  <p class="code">404</p>
+  <h1>ページが見つかりません</h1>
+  <p>URLがまちがっているか，ページが移動・削除された可能性があります．</p>
+  <a href="/">トップページへ戻る</a>
+</body>
+</html>
